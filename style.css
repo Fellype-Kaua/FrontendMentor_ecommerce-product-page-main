@@ -1,0 +1,210 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+    /* Primary */
+    --blue: #1e90ff;
+    --white: #ffffff;
+--orange: hsl(26, 100%, 55%);
+--paleOrange: hsl(25, 100%, 94%);
+
+/* Neutral */
+
+--Very-dark-blue: hsl(220, 13%, 13%);
+--Dark-grayish-blue: hsl(219, 9%, 45%);
+--Grayish-blue: hsl(220, 14%, 75%);
+--Light-grayish-blue: hsl(223, 64%, 98%);
+--White: hsl(0, 0%, 100%);
+--Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family= Kumbh+Sans:wght@400;700 & display = swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.mainNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 5rem;
+    padding-bottom: 1rem;
+    border-bottom: solid 1px gray;
+}
+
+.mainNavLink{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.mainNavLink img{
+    height: 1.5rem;
+}
+
+.mainNavLink h2{
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+    cursor: pointer;
+    }
+.mainNavLink h2:hover{
+font-weight: 700;
+}
+
+.cartProfile button, .cartProfile img{
+    background: none;
+    border: none;
+    width: 2.2rem;
+    margin-left: 3rem;
+}
+
+.container{
+    margin-top: 4rem;
+    max-width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#product{
+    max-width: 40%;
+    margin-right: 8rem;
+}
+
+#productImg{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.productThumbnail{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.productThumbnail img{
+    width: 100px;
+    border-radius: 15px;
+}
+
+#product1{
+    border: solid #ff7d1a;
+    opacity: 0.5;
+}
+
+.content{
+max-width: 25vw;
+font-size: 1rem;
+color: var(--Dark-grayish-blue);
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 1.2rem;
+}
+
+.content h1, .content .promotionPrice{
+    color: black;
+}
+
+.content h3{
+    color: var(--orange);
+}
+
+.content h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.pricesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 35%;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.promotionPrice{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+
+.percentPromotion{
+    background-color: var(--paleOrange);
+    color: var(--orange);
+    
+    padding: 0rem 0.4rem;
+}
+
+.previousPrice{
+    text-decoration: line-through;
+}
+
+.quantBtn{
+    display: flex;
+    gap: 2rem;
+}
+
+.btnAmount{
+    background-color: var(--Light-grayish-blue);
+    border-radius: 2rem;
+}
+
+.quantBtn input{
+    font-size: 1rem;
+    border: none;
+    color: black;
+    background-color: var(--Light-grayish-blue);
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.cartBtn{
+    background-color: var(--Light-grayish-blue);
+border: none;
+width: 2rem;
+height: 3rem;
+color: var(--orange);
+font-size: 1.5rem;
+cursor: pointer;
+}
+
+.addToCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--orange);
+    color: #ffffff;
+    border: none;
+    border-radius: 0.3rem;
+
+    height: 3rem;
+    width: 60%;
+    cursor: pointer;
+}
+
+.addToCart img{
+    margin-right: 1rem;
+    height: 1rem;
+
+}
+
+
+
+.attribution{
+    margin-top: 5rem;
+}
